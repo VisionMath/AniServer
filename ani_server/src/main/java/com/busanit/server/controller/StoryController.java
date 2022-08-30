@@ -26,5 +26,13 @@ public class StoryController {
 		map.put("story", storyRepository.findAll());
 		return map;
 	}
+	
+	@GetMapping("list2")
+	public Map<String, List<Story>> getList2() {
+		Map<String, List<Story>> map = new HashMap<String, List<Story>>();
+		map.put("story", storyRepository.findAll());
+		return map;
+	}
+
 
 }
